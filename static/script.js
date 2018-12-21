@@ -15,7 +15,7 @@ let imageSize = {
 
 let x = window.matchMedia('(max-width: 600px)');
 if (x.matches) {
-	imageSize.width = 68;
+	imageSize.width = 69;
 	imageSize.height = 97;
 	}
 
@@ -44,7 +44,6 @@ function Deck() {
 			this.name = name;
 			this.value = value;
 			this.color = color;
-			// this.image = new Image(82.5, 118.5);
 			this.image = new Image(imageSize.width, imageSize.height);
 			this.image.src = '/static/svgCards/' + name + '.svg';
 			this.image.name = name;
