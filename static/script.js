@@ -15,8 +15,8 @@ let imageSize = {
 
 let x = window.matchMedia('(max-width: 600px)');
 if (x.matches) {
-	imageSize.width = 66;
-	imageSize.height = 95;
+	imageSize.width = 68;
+	imageSize.height = 97;
 	}
 
 container.style.top = '2vh';
