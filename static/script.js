@@ -10,13 +10,13 @@ let stack = document.getElementById('stack');
 
 
 
-container.style.top = '50px';
-container.style.left = innerWidth / 2 - container.clientWidth / 2 + 'px';
+container.style.top = '2vh';
+//container.style.left = innerWidth / 2 - container.clientWidth / 2 + 'px';
 stack.style.left = innerWidth / 2 - stack.clientWidth / 2 + 'px';
 
 window.addEventListener('resize', () => {
-	container.style.top = '50px';
-	container.style.left = innerWidth / 2 - container.clientWidth / 2 + 'px';
+	container.style.top = '2vh';
+	//container.style.left = innerWidth / 2 - container.clientWidth / 2 + 'px';
 	stack.style.left = innerWidth / 2 - stack.clientWidth / 2 + 'px';
 });
 
@@ -37,7 +37,8 @@ function Deck() {
 			this.name = name;
 			this.value = value;
 			this.color = color;
-			this.image = new Image(110, 158);
+		//	this.image = new Image(110, 158);
+			this.image = new Image(82.5, 118.5);
 			this.image.src = '/static/svgCards/' + name + '.svg';
 			this.image.name = name;
 			this.image.slot = null;
@@ -99,7 +100,7 @@ let onTable = [];
 let noDeletes = [];
 let aces = [];
 let slots = document.getElementsByClassName('slot');
-let cardBack = new Image(110, 158);
+let cardBack = new Image(82.5, 118.5);
 cardBack.src = '/static/svgCards/Card back.svg';
 
 window.onload = function() {
@@ -129,7 +130,7 @@ function deal(e) {
 	onTable.push(card1);
 	card1.image.slot = 'slot1';
 	card1.image.classList.add('image');
-	card1.image.style.top = 30 * slot1.childNodes.length + 'px';
+	card1.image.style.top = 21 * slot1.childNodes.length + 'px';
 	slot1.appendChild(card1.image);
 
 	let card2 = drawCard(deck.cards)
@@ -137,7 +138,7 @@ function deal(e) {
 	onTable.push(card2);
 	card2.image.slot = 'slot2';
 	card2.image.classList.add('image');
-	card2.image.style.top = 30 * slot2.childNodes.length + 'px';
+	card2.image.style.top = 21 * slot2.childNodes.length + 'px';
 	slot2.appendChild(card2.image);
 
 	let card3 = drawCard(deck.cards)
@@ -145,7 +146,7 @@ function deal(e) {
 	onTable.push(card3);
 	card3.image.slot = 'slot3';
 	card3.image.classList.add('image');
-	card3.image.style.top = 30 * slot3.childNodes.length + 'px';
+	card3.image.style.top = 21 * slot3.childNodes.length + 'px';
 	slot3.appendChild(card3.image);
 
 	let card4 = drawCard(deck.cards)
@@ -153,7 +154,7 @@ function deal(e) {
 	onTable.push(card4);
 	card4.image.slot = 'slot4';
 	card4.image.classList.add('image');
-	card4.image.style.top = 30 * slot4.childNodes.length + 'px';
+	card4.image.style.top = 21 * slot4.childNodes.length + 'px';
 	slot4.appendChild(card4.image);
 
 	if (deck.cards.length == 0) {
