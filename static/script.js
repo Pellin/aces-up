@@ -1,23 +1,30 @@
 'use strict';
 console.log(document);
 
-let container = document.getElementById('container');
-let slot1 = document.getElementById('slot1');
-let slot2 = document.getElementById('slot2');
-let slot3 = document.getElementById('slot3');
-let slot4 = document.getElementById('slot4');
-let stack = document.getElementById('stack');
+const container = document.getElementById('container');
+const slot1 = document.getElementById('slot1');
+const slot2 = document.getElementById('slot2');
+const slot3 = document.getElementById('slot3');
+const slot4 = document.getElementById('slot4');
+const stack = document.getElementById('stack');
 
+let imageSize = {
+	width: 110,
+	heigth: 158
+}
 
+let x = window.matchMedia('(max-width: 600px)');
+if (x.matches) {
+	imageSize.width = 55;
+	imageSize.height = 89;
+	}
 
 container.style.top = '2vh';
-//container.style.left = innerWidth / 2 - container.clientWidth / 2 + 'px';
-stack.style.left = innerWidth / 2 - stack.clientWidth / 2 + 'px';
+stack.style.left = Math.round(innerWidth / 2 - imageSize.width / 2) + 'px';
 
 window.addEventListener('resize', () => {
 	container.style.top = '2vh';
-	//container.style.left = innerWidth / 2 - container.clientWidth / 2 + 'px';
-	stack.style.left = innerWidth / 2 - stack.clientWidth / 2 + 'px';
+	stack.style.left = Math.round(innerWidth / 2 - imageSize.width / 2) + 'px';
 });
 
 function Deck() {
@@ -37,8 +44,8 @@ function Deck() {
 			this.name = name;
 			this.value = value;
 			this.color = color;
-		//	this.image = new Image(110, 158);
-			this.image = new Image(82.5, 118.5);
+			// this.image = new Image(82.5, 118.5);
+			this.image = new Image(imageSize.width, imageSize.height);
 			this.image.src = '/static/svgCards/' + name + '.svg';
 			this.image.name = name;
 			this.image.slot = null;
@@ -100,7 +107,8 @@ let onTable = [];
 let noDeletes = [];
 let aces = [];
 let slots = document.getElementsByClassName('slot');
-let cardBack = new Image(82.5, 118.5);
+let cardBack = new Image(110, 158);
+// let cardBack = new Image(82.5, 118.5);
 cardBack.src = '/static/svgCards/Card back.svg';
 
 window.onload = function() {
