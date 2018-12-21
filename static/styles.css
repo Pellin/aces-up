@@ -1,0 +1,65 @@
+body {
+	margin: 0px;
+	background: #252;
+	font-family: 'Questrial', sans-serif;
+	user-select: none;
+	overflow: hidden;
+	}
+
+#container {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	}
+
+.slot {
+	position: relative;
+	margin: 5px;
+	width: 110px;
+	max-height: 158px;
+	float: left;
+	background: transparent;
+	}
+
+.empty {
+	border-radius: 8px;
+	background: #262;
+	width: 110px;
+	height: 158px;
+	}
+
+.moveReady {
+	width: 108px;
+	border: 1px solid black;
+	}
+
+.image {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+	transition: opacity 400ms;
+	cursor: pointer;
+	}
+
+img:hover {
+	opacity: 0.93;
+	}
+
+#stack {
+	background: transparent;
+	position: fixed;
+	width: 110px;
+	bottom: 10px;
+	margin: auto;
+	height: 158px;
+	border-radius: 8px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 23px;
+	font-weight: bold;
+	}
+
+#stack:hover {
+	color: #111;
+	}
