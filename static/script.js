@@ -15,8 +15,8 @@ let imageSize = {
 
 let x = window.matchMedia('(max-width: 600px)');
 if (x.matches) {
-	imageSize.width = 55;
-	imageSize.height = 89;
+	imageSize.width = 66;
+	imageSize.height = 95;
 	}
 
 container.style.top = '2vh';
@@ -107,8 +107,7 @@ let onTable = [];
 let noDeletes = [];
 let aces = [];
 let slots = document.getElementsByClassName('slot');
-let cardBack = new Image(110, 158);
-// let cardBack = new Image(82.5, 118.5);
+let cardBack = new Image(imageSize.width, imageSize.height);
 cardBack.src = '/static/svgCards/Card back.svg';
 
 window.onload = function() {

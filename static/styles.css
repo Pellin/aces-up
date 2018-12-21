@@ -16,8 +16,8 @@ body {
 .slot {
 	position: relative;
 	margin: 0.4em;
-	width: 55px;
-	max-height: 89px;
+	width: 66px;
+	max-height: 95px;
 	float: left;
 	background: transparent;
 	}
@@ -25,20 +25,20 @@ body {
 .empty {
 	border-radius: 8px;
 	background: #262;
-	width: 55px;
-	height: 89;
+	width: 66px;
+	height: 95px;
 	}
 
 .moveReady {
-	width: 54;
+	width: 64;
 	border: 0.5px solid #151515;
 	}
 
 #stack {
 	background: transparent;
 	position: fixed;
-	width: 55px;
-	height: 89px;
+	width: 66px;
+	height: 95px;
 	bottom: 10px;
 	margin: 0 auto;
 	border-radius: 4px;
