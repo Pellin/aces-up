@@ -15,8 +15,8 @@ let imageSize = {
 console.log(innerWidth);
 let x = window.matchMedia('(max-width: 600px)');
 if (x.matches) {
-	imageSize.width = innerWidth / 4.5;
-	imageSize.height = innerWidth / 3.5;
+	imageSize.width = innerWidth / 4.2;
+	imageSize.height = innerWidth / 3.3;
 	}
 
 container.style.top = '2vh';
