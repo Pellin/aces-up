@@ -1,7 +1,7 @@
 html, body {
 	position: relative;
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 	margin: 0px;
 	background: #252;
 	font-family: 'Questrial', sans-serif;
@@ -18,8 +18,8 @@ html, body {
 
 .slot {
 	position: relative;
-	margin: 1.8%;
-	width: 21.2%;
+	margin: 1.7%;
+	width: 21.3%;
 	max-height: 38.5%;
 	float: left;
 	background: transparent;
@@ -28,7 +28,7 @@ html, body {
 .empty {
 	border-radius: 4px;
 	background: #262;
-	width: 21.2%;
+	width: 21.3%;
 	height: 38%;
 	}
 
@@ -40,7 +40,7 @@ html, body {
 #stack {
 	background: transparent;
 	position: fixed;
-	width: 21.2%;
+	width: 21.3%;
 	height: 38.5%;
 	bottom: 2px;
 	margin: 0 auto;
