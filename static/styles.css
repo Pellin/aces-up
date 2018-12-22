@@ -11,14 +11,14 @@ html, body {
 #container {
 	position: relative;
 	width: 100vw;
-	height: 30%;
 	margin: 0 auto;
+	height: 27%;
 	background: pink;
 	}
 
 .slot {
 	position: relative;
-	margin: 1.7%
+	margin: 1.7%;
 	width: 21.3%;
 	max-height: 100%;
 	float: left;
