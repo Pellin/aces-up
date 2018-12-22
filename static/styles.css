@@ -12,14 +12,14 @@ html, body {
 	position: relative;
 	width: 100vw;
 	margin: 0 auto;
-	height: 10vh;
+	height: 25%;
 	}
 
 .slot {
 	position: relative;
 	margin: 1.7%;
 	width: 21.3%;
-	max-height: 38.5%;
+	max-height: 100%;
 	float: left;
 	background: transparent;
 	}
@@ -28,12 +28,12 @@ html, body {
 	border-radius: 4px;
 	background: #262;
 	width: 21.3%;
-	height: 38%;
+	height: 100%;
 	}
 
 .moveReady {
 	width: 20.5%;
-	border: 1px solid #151515;
+	border: 0.5px solid #151515;
 	}
 
 #stack {
