@@ -18,7 +18,8 @@ html, body {
 
 .slot {
 	position: relative;
-	margin: 0% 1.7% 0% 1.7%;
+	margin-left: 1.7%
+	margin-right: 1.7%
 	width: 21.3%;
 	max-height: 100%;
 	float: left;
