@@ -12,11 +12,11 @@ let imageSize = {
 	width: 110,
 	heigth: 158
 }
-
+console.log(innerWidth);
 let x = window.matchMedia('(max-width: 600px)');
 if (x.matches) {
-	imageSize.width = 69;
-	imageSize.height = 97;
+	imageSize.width = innerWidth/12;
+	imageSize.height = innerWidth/9;
 	}
 
 container.style.top = '2vh';
