@@ -11,7 +11,7 @@ html, body {
 #container {
 	position: relative;
 	width: 100vw;
-	height: 27%;
+	height: 30%;
 	margin: 0 auto;
 	background: pink;
 	}
@@ -19,7 +19,6 @@ html, body {
 .slot {
 	position: relative;
 	margin: 1.7%
-	margin-top: 0;
 	width: 21.3%;
 	max-height: 100%;
 	float: left;
