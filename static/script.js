@@ -221,6 +221,7 @@ function checkDeletable(arr) {
 
 function deleteCard(e) {
 	if (e.target.parentNode.className != 'slot') return;
+		e.preventDefault();
 		let i = (e.target.parentNode.id.slice(-1)) - 1;
 		if (slot1.isEmpty == true) {
 			i = i - 1;
