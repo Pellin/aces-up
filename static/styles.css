@@ -11,7 +11,7 @@ html, body {
 
 #container {
 	position: relative;
-	width: 98vw;
+	width: 100vw;
 	margin: 0 auto;
 	height: 50vh;
 	}
@@ -28,12 +28,12 @@ html, body {
 .empty {
 	border-radius: 8px;
 	background: #262;
-	width: 22%;
+	width:20%;
 	height: 32%;
 	}
 
 .moveReady {
-	width: 21%;
+	width: 19%;
 	border: 1px solid #151515;
 	}
 
