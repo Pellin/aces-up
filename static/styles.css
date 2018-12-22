@@ -18,8 +18,8 @@ html, body {
 
 .slot {
 	position: relative;
-	margin: 2%;
-	width: 22.2%;
+	margin: 1.5%;
+	width: 21%;
 	max-height: 38%;
 	float: left;
 	background: transparent;
@@ -28,21 +28,21 @@ html, body {
 .empty {
 	border-radius: 8px;
 	background: #262;
-	width: 22.2%;
+	width: 21%;
 	height: 36%;
 	}
 
 .moveReady {
-	width: 21%;
+	width: 20%;
 	border: 1px solid #151515;
 	}
 
 #stack {
 	background: transparent;
 	position: fixed;
-	width: 22.2%;
+	width: 21%;
 	height: 36%;
-	bottom: 1em;
+	bottom: 2px;
 	margin: 0 auto;
 	border-radius: 4px;
 	cursor: pointer;
