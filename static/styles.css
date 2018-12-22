@@ -20,7 +20,7 @@ html, body {
 	position: relative;
 	margin: 1.7%;
 	width: 21.5%;
-	max-height: 95.5%;
+	max-height: 95%;
 	float: left;
 	background: transparent;
 	}
@@ -29,7 +29,7 @@ html, body {
 	border-radius: 4px;
 	background: #262;
 	width: 21.5%;
-	height: 95.5%;
+	height: 95%;
 	}
 
 .moveReady {
