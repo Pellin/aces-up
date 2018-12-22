@@ -12,7 +12,8 @@ html, body {
 	position: relative;
 	width: 100vw;
 	margin: 0 auto;
-	height: 25%;
+	height: 27%;
+	background: pink;
 	}
 
 .slot {
@@ -32,7 +33,7 @@ html, body {
 	}
 
 .moveReady {
-	width: 20.5%;
+	width: 20%;
 	border: 0.5px solid #151515;
 	}
 
