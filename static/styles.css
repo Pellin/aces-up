@@ -9,7 +9,9 @@ html, body {
 	}
 
 * {
-		webkit-backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-webkit-tap-highlight-color: transparent;
+
 }
 
 #container {
@@ -17,7 +19,7 @@ html, body {
 	width: 100vw;
 	margin: 0 auto;
 	height: 33.3%;
-	background: pink;
+	background: transparent;
 	}
 
 .slot {
@@ -26,7 +28,6 @@ html, body {
 	width: 21.6%;
 	max-height: 94.5%;
 	float: left;
-	/* background: transparent; */
 	background: #2323ff;
 	}
 
@@ -39,8 +40,8 @@ html, body {
 
 .moveReady {
 	width: 21.3%;
-	height: 94%;
-	border: 0.5px solid #151515;
+	height: 93.5%;
+	border: 0.8px solid #151515;
 	}
 
 #stack {
