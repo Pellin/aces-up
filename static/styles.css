@@ -1,7 +1,8 @@
-html, body {
+body {
 	height: 100vw;
 	width: 100vw;
 	margin: 0px;
+	padding: 0px;
 	background: #252;
 	font-family: 'Questrial', sans-serif;
 	user-select: none;
