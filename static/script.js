@@ -13,17 +13,16 @@ let imageSize = {
 	heigth: 158
 }
 
-let topDown = Math.floor(innerWidth / 20);
+let topDown = Math.floor(innerHeight / 21);
 
 let x = window.matchMedia('(max-width: 600px)');
 if (x.matches) {
 	imageSize.width = innerWidth / 4.5;
 	imageSize.height = innerWidth / 3.2;
-	}
+};
 
-container.style.top = '2vh';
+container.style.top = '1vh';
 stack.style.left = Math.round(innerWidth / 2 - imageSize.width / 2) + 'px';
-stack.style.bottom = "2px";
 
 window.addEventListener('resize', () => {
 	container.style.top = '2vh';

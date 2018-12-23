@@ -50,7 +50,7 @@ html, body {
 	width: 21.3%;
 	height: 38.5%;
 	bottom: 2px;
-	margin: 0 auto;
+	margin: auto;
 	border-radius: 4px;
 	cursor: pointer;
 	text-align: center;
