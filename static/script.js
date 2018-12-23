@@ -13,8 +13,8 @@ let imageSize = {
 	heigth: 158
 }
 
-alert(innerHeight);
-console.log(innerWidth);
+let topDown = Math.floor(innerWidth / 21);
+
 let x = window.matchMedia('(max-width: 600px)');
 if (x.matches) {
 	imageSize.width = innerWidth / 4.5;
@@ -139,7 +139,7 @@ function deal(e) {
 	onTable.push(card1);
 	card1.image.slot = 'slot1';
 	card1.image.classList.add('image');
-	card1.image.style.top = 17 * slot1.childNodes.length + 'px';
+	card1.image.style.top = topDown * slot1.childNodes.length + 'px';
 	slot1.appendChild(card1.image);
 
 	let card2 = drawCard(deck.cards)
@@ -147,7 +147,7 @@ function deal(e) {
 	onTable.push(card2);
 	card2.image.slot = 'slot2';
 	card2.image.classList.add('image');
-	card2.image.style.top = 17 * slot2.childNodes.length + 'px';
+	card2.image.style.top = topDown * slot2.childNodes.length + 'px';
 	slot2.appendChild(card2.image);
 
 	let card3 = drawCard(deck.cards)
@@ -155,7 +155,7 @@ function deal(e) {
 	onTable.push(card3);
 	card3.image.slot = 'slot3';
 	card3.image.classList.add('image');
-	card3.image.style.top = 17 * slot3.childNodes.length + 'px';
+	card3.image.style.top = topDown * slot3.childNodes.length + 'px';
 	slot3.appendChild(card3.image);
 
 	let card4 = drawCard(deck.cards)
@@ -163,7 +163,7 @@ function deal(e) {
 	onTable.push(card4);
 	card4.image.slot = 'slot4';
 	card4.image.classList.add('image');
-	card4.image.style.top = 17 * slot4.childNodes.length + 'px';
+	card4.image.style.top = topDown * slot4.childNodes.length + 'px';
 	slot4.appendChild(card4.image);
 
 	if (deck.cards.length == 0) {
