@@ -20,6 +20,12 @@ if (x.matches) {
 	imageSize.width = innerWidth / 4.5;
 	imageSize.height = innerWidth / 3.2;
 
+	document.addEventListener('touchmove', (event) => {
+		if (event.scale !== 1) {
+			event.preventDefault();
+		}
+	}, false);
+
 	window.addEventListener('resize', () => {
 		container.style.top = '2vh';
 		stack.style.left = Math.round(innerWidth / 2 - imageSize.width / 2) + 'px';
@@ -125,7 +131,6 @@ window.addEventListener('click', deal);
 };
 
 function deal(e) {
-	e.preventDefault();
 	if (e.target != cardBack) return;
 	if (current4.length != 4 && (slot1.childNodes.length > 1 || slot2.childNodes.length > 1 || slot3.childNodes.length > 1 || slot4.childNodes.length > 1)) return;
 
