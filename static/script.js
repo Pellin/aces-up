@@ -13,7 +13,7 @@ let imageSize = {
 	heigth: 158
 }
 
-let topDown = Math.floor(innerHeight / 21);
+let topDown = Math.floor(innerHeight / 23);
 
 let x = window.matchMedia('(max-width: 600px)');
 if (x.matches) {
