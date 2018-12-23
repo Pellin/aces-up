@@ -12,6 +12,8 @@ let imageSize = {
 	width: 110,
 	heigth: 158
 }
+
+alert(innerHeight);
 console.log(innerWidth);
 let x = window.matchMedia('(max-width: 600px)');
 if (x.matches) {
