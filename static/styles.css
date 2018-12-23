@@ -8,6 +8,10 @@ html, body {
 	overflow: hidden;
 	}
 
+* {
+		webkit-backface-visibility: hidden;
+}
+
 #container {
 	position: relative;
 	width: 100vw;
@@ -18,11 +22,12 @@ html, body {
 
 .slot {
 	position: relative;
-	margin: 1.7%;
+	margin: 1.5%;
 	width: 21.6%;
 	max-height: 94.5%;
 	float: left;
-	background: transparent;
+	/* background: transparent; */
+	background: #2323ff;
 	}
 
 .empty {
@@ -39,7 +44,7 @@ html, body {
 
 #stack {
 	background: transparent;
-	position: fixed;
+	position: absolute;
 	width: 21.3%;
 	height: 38.5%;
 	bottom: 2px;
