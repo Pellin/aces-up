@@ -66,6 +66,7 @@ body {
 	opacity: 1;
 	transition: opacity 400ms;
 	cursor: pointer;
+	border-radius: 4px;
 	}
 
 img:hover {
@@ -120,6 +121,20 @@ img:hover {
 				text-align: center;
 				font-size: 23px;
 				font-weight: bold;
+				}
+
+			.image {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				opacity: 1;
+				transition: opacity 400ms;
+				cursor: pointer;
+				border-radius: 4px;
+				}
+
+			img:hover {
+				opacity: 0.93;
 				}
 
 	}
