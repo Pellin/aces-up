@@ -120,7 +120,7 @@ let noDeletes = [];
 let aces = [];
 let slots = document.getElementsByClassName('slot');
 let cardBack = new Image(imageSize.width, imageSize.height);
-cardBack.src = '/static/svgCards/Card back.svg';
+cardBack.src = '/static/svgCards/Blue card back.svg';
 
 window.onload = function() {
 deck.initDeck();
