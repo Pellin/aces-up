@@ -21,6 +21,20 @@ body {
 	margin: 0 auto;
 	height: 33.3%;
 	background: transparent;
+
+	}
+
+	#introTxt {
+		position: absolute;
+		width: 75%
+		height: 10%
+		position: absolute;
+		top: 25%;
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: bold;
+		background: transparent;
+		visibility: hidden;
 	}
 
 .slot {
@@ -55,7 +69,7 @@ body {
 	border-radius: 4px;
 	cursor: pointer;
 	text-align: center;
-	font-size: 23px;
+	font-size: 1.5em;
 	font-weight: bold;
 	}
 
@@ -78,7 +92,21 @@ body {
 			width: 500px;
 			margin: 0 auto;
 			height: 50vh;
-			backgrond: white;
+			background: transparent;
+			text-align: center;
+			font-size: 1em;
+			}
+
+			#introTxt {
+				position: absolute;
+				width: 75%
+				height: 10%;
+				top: 25%;
+				text-align: center;
+				font-size: 1.5em;
+				font-weight: bold;
+				background: transparent;
+				visibility: hidden;
 			}
 
 		.slot {

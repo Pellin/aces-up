@@ -1,5 +1,4 @@
 'use strict';
-console.log(document);
 
 const container = document.getElementById('container');
 const slot1 = document.getElementById('slot1');
@@ -34,6 +33,7 @@ if (x.matches) {
 
 container.style.top = '1vh';
 stack.style.left = Math.round(innerWidth / 2 - imageSize.width / 2) + 'px';
+introTxt.style.left = Math.round(container.clientWidth / 2 - introTxt.clientWidth / 2) + 'px';
 
 window.addEventListener('resize', () => {
 	container.style.top = '2vh';
@@ -126,11 +126,13 @@ window.onload = function() {
 deck.initDeck();
 stack.appendChild(cardBack);
 deck.shuffle(deck.cards);
+introTxt.style.visibility = 'visible';
 
 window.addEventListener('click', deal);
 };
 
 function deal(e) {
+	introTxt.style.visibility = 'hidden';
 	if (e.target != cardBack) return;
 	if (current4.length != 4 && (slot1.childNodes.length > 1 || slot2.childNodes.length > 1 || slot3.childNodes.length > 1 || slot4.childNodes.length > 1)) return;
 
