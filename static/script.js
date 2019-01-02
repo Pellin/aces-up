@@ -138,6 +138,10 @@ function deal(e) {
 
 	current4 = [];
 
+	for (let i = 0; i < onTable.length; i++) {
+		onTable[i].isDeletable = false;
+	};
+
 	for (let i = 0; i < slots.length; i++) {
 		if (slots[i].hasAttribute('isEmpty')) {
 			slots[i].removeAttribute('isEmpty');
@@ -199,7 +203,7 @@ function inBetween() {
 	checkIfEmpty();
 	checkDeletable(current4);
 
-	if (current4.length == 4) {
+	if (current4.length === 4) {
 		container.removeEventListener('click', moveCard);
 	} else {
 		container.addEventListener('click', moveCard);
@@ -225,7 +229,7 @@ function inBetween() {
 function checkDeletable(arr) {
 	for (let i = 0; i < arr.length; i++) {
 		for (let j = 0; j < arr.length; j++) {
-			if (arr[i].color == arr[j].color && arr[i].value < arr[j].value) {
+			if (arr[i].color === arr[j].color && arr[i].value < arr[j].value) {
 				arr[i].isDeletable = true;
 			};
 		};
@@ -268,6 +272,7 @@ function defineCurrent4() {
 	let slot4 = document.getElementById('slot4');
 
 	current4 = [];
+
 	let name1, name2, name3, name4;
 
 	if (slot1.hasChildNodes()) {
@@ -319,13 +324,10 @@ function checkIfEmpty() {
 		slot4.classList.add('empty');
 	};
 
-	if (!slot1.hasAttribute('isEmpty') && !slot2.hasAttribute('isEmpty') &&
-		!slot3.hasAttribute('isEmpty') && !slot4.hasAttribute('isEmpty')) {
-	};
 }
 
 function moveCard(e) {
-	if (e.target.className != 'slot empty') return;
+	if (e.target.className !== 'slot empty') return;
 
 	for (let i = 0; i < current4.length; i++) {
 		current4[i].image.setAttribute('movable', 'yes');
@@ -353,7 +355,7 @@ function chooseCard(slot) {
 			};
 		};
 
-		defineCurrent4();
+
 		checkDeletable(current4);
 			if (deck.cards.length == 0) {
 				checkEnd();
