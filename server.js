@@ -14,11 +14,6 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/experiment', (req, res) => {
-  res.render('experiment.hbs', {
-  });
-});
-
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
