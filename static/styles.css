@@ -26,8 +26,8 @@ body {
 
 	#introTxt {
 		position: absolute;
-		width: 75%
-		height: 10%
+		width: 75%;
+		height: 10%;
 		position: absolute;
 		top: 25%;
 		text-align: center;
@@ -99,7 +99,7 @@ body {
 
 			#introTxt {
 				position: absolute;
-				width: 75%
+				width: 75%;
 				height: 10%;
 				top: 25%;
 				text-align: center;
